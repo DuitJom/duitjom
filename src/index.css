@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom purple-black ambient backdrops and gradients */
+.bg-radial-purple {
+  background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.15) 0%, rgba(88, 28, 135, 0.05) 45%, rgba(9, 5, 20, 0) 70%);
+}
+
+.bg-purple-mesh {
+  background-color: #080411;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(126, 34, 206, 0.18) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(88, 28, 135, 0.15) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(109, 40, 217, 0.12) 0px, transparent 60%);
+}
+
+.bg-oled-mesh {
+  background-color: #020106;
+  background-image: 
+    radial-gradient(at 50% 0%, rgba(147, 51, 234, 0.12) 0px, transparent 60%);
+}
+
+/* Glassmorphism surface for purple black cards */
+.glass-purple-card {
+  background: rgba(18, 10, 32, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(168, 85, 247, 0.15);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 20px 0 rgba(147, 51, 234, 0.08);
+}
+
+.glass-purple-card:hover {
+  border-color: rgba(168, 85, 247, 0.25);
+}
+
+/* Subtle glow effects */
+.glow-purple-sm {
+  box-shadow: 0 0 15px -3px rgba(168, 85, 247, 0.35);
+}
+
+.glow-purple-lg {
+  box-shadow: 0 0 35px -5px rgba(147, 51, 234, 0.45);
+}
+
+/* Custom scrollbar for clean dark UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0718;
+}
+::-webkit-scrollbar-thumb {
+  background: #3b1d6e;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6d28d9;
+}

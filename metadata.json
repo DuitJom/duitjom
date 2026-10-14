@@ -1,0 +1,6 @@
+{
+  "name": "Rcash.my - Sistem Log Masuk & Dompet Digital",
+  "description": "Sistem UI/UX login & pendaftaran akaun rcash.my bertema ungu hitam moden, lengkap dengan kotak overlay OTP pendaftaran, autentikasi dua faktor (2FA) dan mod gelap automatik.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
